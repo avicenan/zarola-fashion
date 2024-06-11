@@ -17,7 +17,7 @@ class LoginController extends Controller
     public function index() 
     {   
         if(session('user')) {
-            return redirect()->back();
+            return redirect('/');
         }
 
         return view('auth.login');
@@ -49,7 +49,7 @@ class LoginController extends Controller
 
         $shortToken = $this->generateShortToken(Auth::user());
     
-        return redirect()->back();
+        return redirect('/');
     }
     
     public function logout(Request $request)
