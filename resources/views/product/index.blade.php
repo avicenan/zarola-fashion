@@ -16,9 +16,14 @@
 {{-- Path :end --}}
 
 {{-- Banner :start  --}}
-@if(isset($category) || isset($brand))
+@if(isset($category))
 <div class="banner rounded-3 mb-5">
-    <img src="{{ asset('img/pic1.png') }}" class="d-block w-100 object-fit-cover rounded-3" alt="..." height="300px">
+    <img src="{{ asset("img/{$category}-banner.png") }}" class="d-block w-100 object-fit-cover rounded-3" alt="..." height="300px">
+</div>
+@endif 
+@if(isset($brand))
+<div class="banner rounded-3 mb-5">
+    <img src="{{ asset("img/{$brand}-banner.png") }}" class="d-block w-100 object-fit-cover rounded-3" alt="..." height="300px">
 </div>
 @endif 
 {{-- Banner :end  --}}

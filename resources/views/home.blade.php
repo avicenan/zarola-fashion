@@ -6,7 +6,7 @@
 
 {{-- Banner :start  --}}
 <div class="banner rounded-3 mb-3">
-    <img src="{{ asset('img/pic1.png') }}" class="d-block w-100 object-fit-cover rounded-3" alt="..." height="300px">
+    <img src="{{ asset('img/home-banner.jpg') }}" class="d-block w-100 object-fit-cover rounded-3" alt="..." height="300px">
 </div>
 {{-- Banner :end  --}}
 
