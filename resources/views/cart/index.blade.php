@@ -24,7 +24,7 @@
                                     <div class="row mb-4">
                                         <div class="col-md-2">
                                             <div class="card" style="width: 100%">
-                                                <img src="https://dynamic.zacdn.com/lxh_vkVlGY_t4qMCSJVarasRxuc=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/vans-1523-8452622-1.jpg" class="card-img-top object-fit-cover img-fluid" height="100px" width="100px" alt="...">
+                                                <img src="{{ asset($cart->thumbnail) ?? 'https://dynamic.zacdn.com/lxh_vkVlGY_t4qMCSJVarasRxuc=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/vans-1523-8452622-1.jpg' }}" class="card-img-top object-fit-cover img-fluid" height="100px" width="100px" alt="...">
                                               </div>
                                         </div>
                                         <div class="col">
