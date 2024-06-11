@@ -103,7 +103,7 @@
             <div class="card p-0 col-sm-4 m-2 border-0" style="width: 17rem;">
                 <a href="/p/{{ $prod->slug . '/' . $prod->id }}" class="text-decoration-none">
                     <div class="position-relative">
-                        <img src="{{ $prod->thumbnail ?? 'https://dynamic.zacdn.com/lxh_vkVlGY_t4qMCSJVarasRxuc=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/vans-1523-8452622-1.jpg' }}" class="card-img-top z-1" alt="..." width="150px">
+                        <img src="{{ asset($prod->thumbnail) ?? 'https://dynamic.zacdn.com/lxh_vkVlGY_t4qMCSJVarasRxuc=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/vans-1523-8452622-1.jpg' }}" class="card-img-top z-1" alt="..." width="150px">
                         <div class=" bg-warning text-secondary position-absolute top-0 start-0 rounded-3 px-2 bg-opacity-25">
                             <small>
                                 <span class="material"></span>
@@ -119,7 +119,7 @@
                 <div class="card-desc px-1">
                     <div class="row">
                         <h6 class="col d-flex justify-content-start text-black">
-                            Rp. {{ $prod->price }}
+                            Rp. {{ number_format($prod->price) }}
                         </h6>
                     </div>
                 </div>

@@ -19,7 +19,7 @@
 {{-- Header :start --}}
 <div class="row mb-2">
     <div class="col-md-7 mb-2 p-2 d-flex justify-content-center">
-        <img src="https://dynamic.zacdn.com/lxh_vkVlGY_t4qMCSJVarasRxuc=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/vans-1523-8452622-1.jpg" class="d-block object-fit-cover border border-2 rounded-3 px-4 w-75" alt="..." >
+        <img src="{{ asset($product->thumbnail) ?? 'https://dynamic.zacdn.com/lxh_vkVlGY_t4qMCSJVarasRxuc=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/vans-1523-8452622-1.jpg' }}" class="d-block object-fit-cover border border-2 rounded-3 px-4 w-75" alt="..." >
     </div>
     <div class="col-md-5">
         <div class="row mb-3">
